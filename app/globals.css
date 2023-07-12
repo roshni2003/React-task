@@ -1,107 +1,292 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+*{
+  background-color: black;
+  margin:0px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
+/*header*/
+.head{
+    background: var(--bg-dark, #0E0E15);
+    margin:0px 95px;
+    height:128px;
+}
+.head1{
+    background: var(--bg-dark, #0E0E15);
+    height : 128px;
+}
+.head2{
+    background: var(--bg-dark, #0E0E15);
+    height:28px;
+}
+.head3{
+    background: var(--bg-dark, #0E0E15);
+    height: 72px;
+}
+.logo{
+    background: var(--bg-dark, #0E0E15);
+    margin-left:80px;
+    margin-bottom:30px;
+}
+.heatext{
+    background: var(--bg-dark, #0E0E15);
+    margin-left: 16px;
+    margin-bottom:50px;
+    
+}
+.heatext1{
+    background: var(--bg-dark, #0E0E15);
+    float:right;
+    margin-right: 70px;
+    margin-top:27px;
+    
+}
+.heatext2{
+    background: var(--bg-dark, #0E0E15);
+    float:right;
+    margin-right: 41px;
+    margin-top:27px;
+    
+}
+.head4{
+    background: var(--bg-dark, #0E0E15);
+    border-bottom: solid 1px red;
+    height: 27px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+
+
+
+/*footer*/
+
+.footer{
+    background: var(--bg-secondary, #272734);
+    height:140px;
+    margin: 0px 95px;
+}
+.inside{
+    background: var(--bg-secondary, #272734);
+    height:40px;
+}
+.inside1{
+    background: var(--bg-secondary, #272734);
+    height:40px;
+}
+.inside2{
+    background: var(--bg-secondary, #272734);
+    height:32px;
+}
+.logo1{
+    background: var(--bg-secondary, #272734);
+    margin-left: 160px;
+}
+.footext{
+    background: var(--bg-secondary, #272734);
+    margin-left:8px;
+    position :relative;
+    bottom: 5px;
+}
+.inside3{
+    background: var(--bg-secondary, #272734);
+    height:28px;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+
+
+/*Movie_row*/
+
+.movie{
+    background: var(--bg-dark, #0E0E15);
+    height:"fit-content";
+    margin: 0px 95px 0px 95px;
+}
+.movie1{
+    border-bottom: solid 1px #5E5E75;
+    background: var(--bg-dark, #0E0E15);
+    height:372px;
+    margin: 0px 160px 0px 160px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.info{
+    background: var(--bg-dark, #0E0E15);
+    color: var(--text, #F3F3F3);
+    font-size: 20px;
+    position:relative;
+    top:1px;
+}
+.info1{
+    background: var(--bg-dark, #0E0E15);
+    color: var(--text, #F3F3F3);
+    font-size: 12px;
+    font-family: Kanit;
+    font-weight: 300;
+    line-height: 130%;
+    position:relative;
+    bottom:3px;
+}
+.movie_info{
+    background: var(--bg-dark, #0E0E15);
+    border: solid 1px white;
+    margin: 0px 0px 24px 0px;
+    height: 252px;
+}
+.empty{
+    background: var(--bg-dark, #0E0E15);
+    height: 40px;
+}
+.empty1{
+    background: var(--bg-dark, #0E0E15);
+    height: 30px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+.watch{
+    background: var(--bg-dark, #0E0E15);
+    height: 28px;
+}
+.watch_text{
+    background: var(--bg-dark, #0E0E15);
+    color: var(--text, #F3F3F3);
+    font-family: Kanit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+.info_box{
+    background: var(--bg-dark, #0E0E15);
+    border:solid 1px white;
+    float:right;
+    margin-left: 26px;
+    width:712px;
+    height:251px;
+}
+.movie_name{
+    background: var(--bg-dark, #0E0E15);
+    border:solid 1px white;
+    float:left;
+    width:495px;
+    height:73px;
+}
+.movie_name1{
+    background: var(--bg-dark, #0E0E15);
+    border:solid 1px white;
+    float:left;
+    width:495px;
+    height:70px;
+    margin-top:12px;
+}
+.icons{
+    background: var(--bg-dark, #0E0E15);
+    float:left;
+    width:712px;
+    height:40px;
+    margin-top:52px;
+    
+}
+.like{
+    background: var(--bg-dark, #0E0E15);
+    float:left;
+    width:40px;
+    height:40px;
+    
+}
+.dislike{
+    background: var(--bg-dark, #0E0E15);
+    float:left;
+    width:30px;
+    height:40px;
+    margin-left:10px;
+    
+}
+.vote{
+    background: #272734;
+    float:left;
+    width:40px;
+    height:40px;
+    border-radius:32px;
+    
+}
+.delete{
+    background: var(--bg-dark, #0E0E15);
+    float:right;
+    width:30px;
+    height:40px;
+    
+}
+.like_icon{
+    background: var(--bg-dark, #0E0E15);
+    margin-top:8px; 
+}
+.dislike_icon{
+    background: var(--bg-dark, #0E0E15);
+    margin-top:8px; 
+}
+.Delete_icon{
+    background: var(--bg-dark, #0E0E15);
+    margin-top:8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+
+/*Form*/
+
+.form_main{
+    background: var(--bg-dark, #0E0E15);
+    height:258px;
+    margin: 0px 95px;
 }
+
+.foot{
+    background: var(--bg-dark, #0E0E15);
+    height:40px;
+    margin: 0px 160px;
+}
+.foot1{
+    background: var(--bg-dark, #0E0E15);
+    height:30px;
+    margin: 0px 160px;
+}
+.foot2{
+    background: var(--bg-dark, #0E0E15);
+    height:16px;
+    margin: 0px 160px;
+}
+.foot3{
+    background: var(--bg-dark, #0E0E15);
+    height:28px;
+    margin: 0px 160px;
+}
+.foot4{
+    background: var(--bg-dark, #0E0E15);
+    height:52px;
+    margin: 0px 160px;
+}
+.form_button_box{
+    background: var(--accent-red, #F85146);
+    height:52px;
+    width: 200px;
+    border-radius:2px;
+}
+.button_text{
+    background: var(--accent-red, #F85146);
+    margin-left:26px;
+    color: var(--text, #F3F3F3);
+    font-size: 20px;
+    position:relative;
+    top:15px;
+}
+.form_button{
+    background: var(--accent-red, #F85146);
+    height:40px;
+    width: 40px;
+    float:right;
+    margin: 5px 15px 0px 0px;
+}
+.add_button{
+    background: var(--accent-red, #F85146);
+}
+
+
+
+
+
