@@ -1,27 +1,33 @@
-function Row(){
+import Rating from './Like';
+import Deletebut from './Delete';
+function Row(props){
     return(
         <>
           <div className="movie">
             <div className="movie1">
                 <div className="empty"></div>
-                <div className="watch"><text className="watch_text">Watch</text></div>
                 <div className="empty1"></div>
                 <div className="movie_info">
-                    <img src="movie_one.png" width="200px"/>
+                    <img className="movie_img" src={props.data.image} width="200px"/>
                     <div className="info_box">
-                        <div className="movie_name"></div>
-                        <div className="movie_name1"></div>
-                        <div className="icons">
-                            <div className="like"><img className="like_icon" src="Like.png"width="32px" height="32px"></img></div>
-                            <div className="vote"></div>
-                            <div className="dislike"><img className="dislike_icon" src="No.png"width="32px" height="32px"></img></div>
-                            <div className="delete"><img className="Delete_icon" src="fluent_delete-32-regular@2x.png"width="26px" height="29px"></img></div>
+                        <div className="movie_name">
+                            <h1 className="movie_head">{props.data.name}</h1>
+                            <p className="time_type">{props.data.year}</p>
                         </div>
+                        <div className="movie_name1">
+                            <h3 className="description">Description</h3>
+                            <p className="movie_des">{props.data.description}</p>
+                        </div>
+                        <div className="icons"></div>
                     </div>
                 </div>
             </div>    
-          </div>  
+          </div>
+          <Rating/>  
+          <Deletebut/>
         </>
     )
+    
 }
 export default Row;
+

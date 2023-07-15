@@ -1,43 +1,43 @@
 import React from './Header';
 import Row from './Movie_row';
 import Form from './Form_add';
+import Deletebut from './Delete';
 import Next from './Footer';
 export default function Page() {
   const people = [{
   id: 0,
   name: "Dear Zindagi",
-  discripton:"Kaira is a budding cinematographer in search of a perfect life. Her encounter with Jug, an unconventional thinker, helps her gain a new perspective on life. She discovers that happiness is all about finding comfort in life's imperfections"
-}, {
-  id: 1, // Used in JSX as a key
+  year: "2016.2h 31m| Drama,Romance",
+  description:"Kaira is a budding cinematographer in search of a perfect life. Her encounter with Jug, an unconventional thinker, helps her gain a new perspective on life. She discovers that happiness is all about finding comfort in life's imperfections",
+  image:"movie_one.png"
+},{
+  id: 1, 
   name: 'Brave',
-  profession: 'chemist',
-  accomplishment: 'discovery of Arctic ozone hole',
-  imageId: 'mynHUSa'
-}, {
-  id: 2, // Used in JSX as a key
-  name: 'Mohammad Abdus Salam',
-  profession: 'physicist',
-  accomplishment: 'electromagnetism theory',
-  imageId: 'bE7W1ji'
-}, {
-  id: 3, // Used in JSX as a key
-  name: 'Percy Lavon Julian',
-  profession: 'chemist',
-  accomplishment: 'pioneering cortisone drugs, steroids and birth control pills',
-  imageId: 'IOjWm71'
-}, {
-  id: 4, // Used in JSX as a key
-  name: 'Subrahmanyan Chandrasekhar',
-  profession: 'astrophysicist',
-  accomplishment: 'white dwarf star mass calculations',
-  imageId: 'lrWQx8l'
+  year: "2012.1h 33m  |  Adventurous, Comedy",
+  description:"Determined to make her own path in life, Princess Merida defies a custom that brings chaos to her kingdom. Granted one wish, Merida must rely on her bravery and her archery skills to undo a beastly curse",
+  image:"Brave.png"
+},{
+  id: 2, 
+  name: 'Moana',
+  year: "2016.1h 47m  |  Adventurous, Comedy",
+  description:"In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+  image:"Moana.png"
+},{
+  id: 3, 
+  name: 'Mulan',
+  year: "1998.1h 27m  |  Adventurous, Comedy",
+  description:"To save her father from death in the army, a young maiden secretly goes in his place and becomes one of China's greatest heroines in the process.",
+  image:"Mulan.png"
 }];
 
   return (
     <>
       <React/>
-      <Row/> 
-      <Row/>
+      <div className="watch"><img className="watch_text" src="Watch.png"></img></div>
+      {people.map((data)=>(
+      <Row key={data.id} data={data}/>
+      ))} 
+      
       <Form/> 
       <Next/>
     </>

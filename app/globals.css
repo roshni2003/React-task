@@ -125,7 +125,6 @@
 }
 .movie_info{
     background: var(--bg-dark, #0E0E15);
-    border: solid 1px white;
     margin: 0px 0px 24px 0px;
     height: 252px;
 }
@@ -141,21 +140,17 @@
 
 .watch{
     background: var(--bg-dark, #0E0E15);
+    width:1262px;
     height: 28px;
+    margin-left: 95px;
 }
 .watch_text{
     background: var(--bg-dark, #0E0E15);
-    color: var(--text, #F3F3F3);
-    font-family: Kanit;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    text-transform: capitalize;
+    margin-left: 160px;
+    margin-top:50px;
 }
 .info_box{
     background: var(--bg-dark, #0E0E15);
-    border:solid 1px white;
     float:right;
     margin-left: 26px;
     width:712px;
@@ -163,18 +158,59 @@
 }
 .movie_name{
     background: var(--bg-dark, #0E0E15);
-    border:solid 1px white;
     float:left;
     width:495px;
     height:73px;
 }
 .movie_name1{
     background: var(--bg-dark, #0E0E15);
-    border:solid 1px white;
     float:left;
     width:495px;
-    height:70px;
+    height:74px;
     margin-top:12px;
+}
+.movie_head{
+    background: var(--bg-dark, #0E0E15);
+    color: var(--text, #F3F3F3);
+    font-family: Kanit;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+.time_type{
+    background: var(--bg-dark, #0E0E15);
+    color: var(--text, #F3F3F3);
+    font-family: Kanit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    text-transform: capitalize;
+    margin-left:5px;
+}
+.description{
+    background: var(--bg-dark, #0E0E15);
+    color: var(--text, #F3F3F3);
+    font-family: Kanit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+.movie_des{
+    background: var(--bg-dark, #0E0E15);
+    color: var(--text, #F3F3F3);
+    font-family: Kanit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    text-transform: capitalize;
+    height:"fit-content";
+    margin-top: 5px;
 }
 .icons{
     background: var(--bg-dark, #0E0E15);
@@ -187,6 +223,9 @@
 .like{
     background: var(--bg-dark, #0E0E15);
     float:left;
+    margin-left:480px;
+    position:relative;
+    bottom:90px;
     width:40px;
     height:40px;
     
@@ -194,6 +233,8 @@
 .dislike{
     background: var(--bg-dark, #0E0E15);
     float:left;
+    position:relative;
+    bottom:90px;
     width:30px;
     height:40px;
     margin-left:10px;
@@ -202,14 +243,28 @@
 .vote{
     background: #272734;
     float:left;
+    position:relative;
+    bottom:90px;
     width:40px;
     height:40px;
     border-radius:32px;
     
 }
+#Votenum{
+    color:white;
+    background-color:#272734;
+    position:relative;
+    left:15px;
+    top:10px
+    
+    
+}
 .delete{
     background: var(--bg-dark, #0E0E15);
     float:right;
+    margin-right:255px;
+    position:relative;
+    bottom:65px;
     width:30px;
     height:40px;
     
