@@ -280,6 +280,8 @@
 .Delete_icon{
     background: var(--bg-dark, #0E0E15);
     margin-top:8px;
+    width:26px; 
+    height:29px;
 }
 
 

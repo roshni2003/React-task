@@ -1,10 +1,11 @@
-function Deletebut(){
+
+function DeleteBtn({onDelete}){
     return(
     <>
     <div className="delete">
-        <img className="Delete_icon" src="fluent_delete-32-regular@2x.png"width="26px" height="29px"></img>
+        <img className="Delete_icon" src="fluent_delete-32-regular@2x.png" onClick={onDelete}></img>
     </div>
     </>
     )
 }
-export default Deletebut;
+export default DeleteBtn;

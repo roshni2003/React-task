@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-function Rating(){
+function Rating(myDelete){
     const [votes, setVotes] = useState(0);
 
     const handleVoteUp = () => {
@@ -22,8 +22,10 @@ function Rating(){
         </div>
         <div className="dislike">
             <img className="dislike_icon" src="No.png"width="32px" height="32px"  onClick={handleVoteDown}></img>
+
+           
         </div>
-                               
+                          
         </>
     )
 }
