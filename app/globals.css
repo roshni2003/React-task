@@ -102,7 +102,7 @@
 .movie1{
     border-bottom: solid 1px #5E5E75;
     background: var(--bg-dark, #0E0E15);
-    height:372px;
+    height:348px;
     margin: 0px 160px 0px 160px;
 }
 
@@ -225,7 +225,7 @@
     float:left;
     margin-left:480px;
     position:relative;
-    bottom:90px;
+    bottom:60px;
     width:40px;
     height:40px;
     
@@ -234,7 +234,7 @@
     background: var(--bg-dark, #0E0E15);
     float:left;
     position:relative;
-    bottom:90px;
+    bottom:60px;
     width:30px;
     height:40px;
     margin-left:10px;
@@ -244,7 +244,7 @@
     background: #272734;
     float:left;
     position:relative;
-    bottom:90px;
+    bottom:60px;
     width:40px;
     height:40px;
     border-radius:32px;
@@ -264,7 +264,7 @@
     float:right;
     margin-right:255px;
     position:relative;
-    bottom:65px;
+    bottom:60px;
     width:30px;
     height:40px;
     

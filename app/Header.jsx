@@ -1,4 +1,4 @@
-function Header(){
+function React(){
     return(
         <>
         <div className="head">
@@ -18,6 +18,4 @@ function Header(){
     )   
 }
 
-export default Header;
-
-
+export default React;

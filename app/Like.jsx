@@ -1,17 +1,4 @@
-"use client"
-import React, { useState } from 'react';
-function Rating(myDelete){
-    const [votes, setVotes] = useState(0);
-
-    const handleVoteUp = () => {
-        setVotes(votes + 1);
-    };
-    const handleVoteDown = () => {
-        setVotes(votes - 1);
-    };
-
-
-
+function Rating({handleVoteUp,handleVoteDown,votes}){
     return (
         <>
         <div className="like">
